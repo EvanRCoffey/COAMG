@@ -6,4 +6,4 @@ The SVG of the logo wouldn't load.  I tried to use the local version of the file
 
 Also, some pages are bigger than others, and I'm not sure why.  I think that was happening a while ago, at some point.
 
-And, of course, I still need to get the "contact me" form to work correctly.
+Figure out why nodemailer won't work - probably will need help on this one.
