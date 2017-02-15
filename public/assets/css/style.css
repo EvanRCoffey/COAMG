@@ -1,0 +1,219 @@
+/* Extra small devices (phones, less than 768px) */
+body {
+	text-align: center;
+	background-color: #C7D2D6;
+	color: #444747;
+	font-family: 'EB Garamond', serif;
+}
+
+h1 {
+	font-size: x-large;
+	text-align: center;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.contactMeField {
+	width: 400px;
+}
+
+.contactMeMessage {
+	width: 400px;
+	height: 180px;
+}
+
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.navBarLink {
+	padding-left: 60px;
+	padding-right: 60px;
+	text-decoration: none;
+	color: #444747;
+}
+
+#logoimg {
+	height: 130px;
+	width: auto;
+}
+
+#header {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#footer {
+	width: 70%;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#mainSection {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 1px solid black;
+}
+
+#resources {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#projects {
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: left;
+}
+
+.centerLink {
+	text-align: center;
+}
+
+.jumbotron {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	background-color: white;
+	margin-bottom: 0px;
+	border: 1px solid black;
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#leftContent {
+	border-bottom: 1px solid black;
+	text-align: left;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#rightContent {
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#bio {
+	text-align: left;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-bottom: 1px solid black;
+}
+
+#professional {}
+
+#textboxMessage { 
+	width: 750px;
+}
+
+#proj1picR {
+	display: block;
+	margin: 0 auto;
+}
+
+#proj1picL {
+	display: block;
+	margin: 0 auto;
+}
+
+#proj1pic1 {
+	height: 250px;
+	width: auto;
+}
+
+#proj1pic2 {
+	height: 250px;
+	width: auto;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	.navBarLink {
+		padding-left: 70px;
+		padding-right: 70px;
+		text-decoration: none;
+		color: #444747;
+	}
+
+	#logoimg {
+		height: 160px;
+		width: auto;
+	}
+}
+ 
+/*Medium devices (desktops, 992px and up)*/ 
+@media (min-width: 992px) { 
+
+	.navBarLink {
+		padding-left: 80px;
+		padding-right: 80px;
+		text-decoration: none;
+		color: #444747;
+	}
+
+	#proj1pic1 {
+		height: 400px;
+		width: auto;
+	}
+
+	#proj1pic2 {
+		height: 400px;
+		width: auto;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+	.navBarLink {
+		padding-left: 40px;
+		padding-right: 40px;
+		text-decoration: none;
+		color: #444747;
+	}
+
+	#leftContent {
+		border-right: 1px solid black;
+		border-bottom: 0;
+	}
+
+	#proj1picR {
+		display: inline;
+		float: right;
+	}
+
+	#proj1picL {
+		display: inline;
+	}
+}
