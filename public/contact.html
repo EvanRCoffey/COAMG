@@ -35,61 +35,21 @@
 		<br>
 		<h1>Contact me</h1>
 		<br>
-		<form method="POST" name="contactform" id="contactform" action="nodemailer.js"> <!--Doing two things on submit.  This, plus sendEmail() below-->
-		<p>
-		<label for='name'>Your name:</label> <br>
-		<input type="text" name="name" class="contactMeField"><br><br>
-		</p>
-		<p>
-		<label for='email'>Your email address:</label> <br>
-		<input type="text" name="email" class="contactMeField"><br><br>
-		</p>
-		<p>
-		<label for='message'>Your message:</label> <br>
-		<textarea name="message" class="contactMeMessage"></textarea><br><br>
-		</p>
-		<input type="submit" value="Send message" onclick="sendEmail()"><br><br> <!--Doing two things on submit.  This, plus POST above-->
+		<form id="contactform">
+			<p>
+			<label for='name'>Your name:</label> <br>
+			<input type="text" name="name" class="contactMeField" id="name"><br><br>
+			</p>
+			<p>
+			<label for='email'>Your email address:</label> <br>
+			<input type="text" name="email" class="contactMeField" id="email"><br><br>
+			</p>
+			<p>
+			<label for='message'>Your message:</label> <br>
+			<textarea name="message" class="contactMeMessage" id="message"></textarea><br><br>
+			</p>
+			<button class="contactSubmitBtn">Submit</button><br><br>
 		</form>
-
-
-		<script type="text/javascript">
-			function sendEmail() {
-				var x = document.getElementById("contactform").submit();// Form submission
-				'use strict';
-				const nodemailer = require('nodemailer');
-
-				//These three must all be strings
-				var email = x.email; //Waiting...
-				var name = x.name; //Waiting...
-				var message = x.message; //Waiting...
-
-				// create reusable transporter object using the default SMTP transport
-				let transporter = nodemailer.createTransport({
-				    service: 'yahoo',
-				    auth: {
-				        user: 'molander16@yahoo.com',
-				        pass: 'A6d4$nJKD2'
-				    }
-				});
-
-				// setup email data with unicode symbols
-				let mailOptions = {
-				    from: email, // sender email
-				    to: 'lesleyawilliams7@gmail.com', // list of receivers
-				    subject: 'COAMG Email from ' + name, // Subject line including sender name
-				    text: message, // plain text body using message contents
-				    html: '' // html body left blank
-				};
-
-				// send mail with defined transport object
-				transporter.sendMail(mailOptions, (error, info) => {
-				    if (error) {
-				        return console.log(error);
-				    }
-				    console.log('Message %s sent: %s', info.messageId, info.response);
-				});
-			}
-		</script>
 	</div>
 </div>
 
@@ -99,4 +59,6 @@ Lesley Williams and Evan Coffey - 2017
 </div>
 
 </body>
+<script type="text/javascript" src="./assets/javascript/contact.js">
+</script>
 </html>
