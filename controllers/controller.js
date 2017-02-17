@@ -78,9 +78,7 @@ router.post("/newEmail", function(req, res) {
 	    	console.log('Message %s sent: %s', info.messageId, info.response);
 	    	returnedObj.errors += 'Message: ' + info.messageId + ' sent: ' + info.response;
 	    }
-	});
-
-	res.json(returnedObj);
+	}).then(res.json(returnedObj););
 });
 
 // If no matching route is found default to home
