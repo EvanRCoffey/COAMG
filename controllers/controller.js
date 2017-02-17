@@ -42,7 +42,8 @@ router.post("/newEmail", function(req, res) {
 	var returnedObj = {
 		email: email,
 		name: name,
-		message: message
+		message: message,
+		errors: ''
 	}
 
 	// create reusable transporter object using the default SMTP transport
@@ -69,9 +70,13 @@ router.post("/newEmail", function(req, res) {
 	        console.log("ERROR");
 	        console.log(error);
 	        console.log(info);
+	        returnedObj.errors += error;
+	        returnedObj.errors += " ||||| ";
+	        returnedObj.errors += info;
 	    }
 	    else {
 	    	console.log('Message %s sent: %s', info.messageId, info.response);
+	    	returnedObj.errors += 'Message: ' + info.messageId + ' sent: ' + info.response;
 	    }
 	});
 
