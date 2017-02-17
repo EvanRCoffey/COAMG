@@ -60,8 +60,8 @@ router.post("/newEmail", function(req, res) {
 	    from: email, // sender email
 	    to: 'lesleyawilliams7@gmail.com', // list of receivers
 	    subject: 'COAMG Email from ' + name, // Subject line including sender name
-	    text: message, // plain text body using message contents
-	    html: 'blank' // html body left blank
+	    text: message // plain text body using message contents
+	    // html: message // html body left blank
 	};
 
 	// send mail with defined transport object
