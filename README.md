@@ -1,10 +1,10 @@
 # COAMG
 ConfessionsOfAMontessoriGuide.com
 
-#*COSMETIC ISSUES*
+*The SVG of the logo wouldn't load.  I tried to use the local version of the file, which didn't work, and the version on github had a URL that was a mile long.  I ended up using the github-hosted PNG version.  It looks like there are different sized logos on different pages, causing the pages to grow and shrink as you navigate the site.
 
-*The SVG of the logo wouldn't load.  I tried to use the local version of the file, which didn't work, and the version on github had a URL that was a mile long.  I ended up using the github-hosted PNG version.
+*Host website properly
 
-*Also, some pages are bigger than others, and I'm not sure why.  I think that was happening a while ago, at some point.
+*Any new updates from L
 
 :octocat:
